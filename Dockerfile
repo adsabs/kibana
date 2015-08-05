@@ -23,6 +23,7 @@ EXPOSE 5601
 
 # Copy configuration and run files
 ##
+COPY resources/govern.conf /opt/governor/
 COPY resources/kibana.sh /etc/service/kibana/run
 
 # How the docker container is interacted with
