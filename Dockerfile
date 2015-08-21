@@ -1,4 +1,4 @@
-# Dockerizing Kibana:
+# Dockerizing Kibana
 # Dockerfile for building kibana on an ubuntu machine
 
 # OS to use
@@ -8,7 +8,7 @@ FROM phusion/baseimage
 ## Download the tarred file, untar, and place in the correct location
 ### Replace when github has Large File Storage activated
 RUN apt-get update && apt-get install curl git -y
-RUN curl -L https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-linux-x64.tar.gz | tar xvz -C /opt/ && mv /opt/kibana-4.0.0-linux-x64/ /opt/kibana/
+RUN curl -L https://download.elasticsearch.org/kibana/kibana/kibana-4.1.1-linux-x64.tar.gz | tar xvz -C /opt/ && mv /opt/kibana-4.1.1-linux-x64/ /opt/kibana/
 
 ## Install Governor binary
 RUN mkdir -p /opt/governor
